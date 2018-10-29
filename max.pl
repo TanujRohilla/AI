@@ -1,6 +1,6 @@
-max(A,B):-
-(
- A=B -> write('both are equal');
- A>B -> (Z is A,write(Z));
- (Z is B,write(Z))
-).
+/* Write a prolog program to find the maximum of two numbers */
+max(X,Y):-
+	X>Y,
+	write(X),write(' IS GREATER THAN '),write(Y)
+	;X<Y,
+	write(Y),write(' IS GREATER THAN '),write(X).
